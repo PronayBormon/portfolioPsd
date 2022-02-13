@@ -360,7 +360,8 @@ padding-top: 30px;
     animation-direction: alternate;
 }
 .recent_history:hover .about_title_long span::before{
-    animation: left_long 2s infinite linear;
+    animation: leftright 2s infinite linear;
+    animation-direction: alternate;
 }
 /* =================long end here ============== */
 /* --------------------- title part  end ---------------- */
