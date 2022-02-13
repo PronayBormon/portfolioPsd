@@ -269,7 +269,7 @@ padding-top: 30px;
     transform: translate(-36%,1px);
     background: #f39c12;
 }
-@keyframes leftright_long{
+@keyframes leftright{
     0%{
          left: 30%;
         
@@ -319,6 +319,25 @@ padding-top: 30px;
     transform: translate(-42%,1px);
     background: #f39c12;
 }
+@keyframes left_long{
+    0%{
+        right:  0%;
+       
+   } 
+   25%{
+          right:  25%;
+   }
+   50%{
+      
+       right: 50%;
+   }
+   75%{
+       right: 75%;
+   }
+   100%{
+       right:  87%;
+   }
+}
 @keyframes leftright{
     0%{
         left: 30%;
@@ -327,18 +346,21 @@ padding-top: 30px;
         left: 50%;
     }
     100%{
-        left: 70%;
+        left: 100%;
     }
 }
 /* hover */
 .about_me:hover .about_title span::before, .life_story:hover .about_title span::before{
-    animation: leftright 1s infinite linear;
+    animation: leftright 2s infinite linear;
     animation-direction: alternate;
 }
 
-.getin_tuch:hover .about_title_long span::before, .follow_me:hover .about_title_long span::before, .claints_feedback:hover .about_title_long span::before, .recent_tweet:hover .about_title_long span::before, .my_service:hover .about_title_long span::before, .my_work:hover .about_title_long span::before, .statistic:hover .about_title_long span::before, .recent_history:hover .about_title_long span::before{
+.getin_tuch:hover .about_title_long span::before, .follow_me:hover .about_title_long span::before, .claints_feedback:hover .about_title_long span::before, .recent_tweet:hover .about_title_long span::before, .my_service:hover .about_title_long span::before, .my_work:hover .about_title_long span::before, .statistic:hover .about_title_long span::before {
     animation: leftright 2s infinite linear;
     animation-direction: alternate;
+}
+.recent_history:hover .about_title_long span::before{
+    animation: left_long 2s infinite linear;
 }
 /* =================long end here ============== */
 /* --------------------- title part  end ---------------- */
